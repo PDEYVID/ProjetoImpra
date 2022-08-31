@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+    <title>Projeto impra</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Almoxarife</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Local
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Material</a></li>
+                            <li><a class="dropdown-item" href="#">Downloads</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Consultar" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Consultar</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-3" id="tabela">
+        <h2>Produtos</h2>
+
+        <input class="form-control" id="myInput" type="text" placeholder="Procurar..">
+        <br>
+        <table class="table table-bordered" class="table-responsive">
+
+            <button onclick="adicionaLinha('tbl')">Adicionar</button>
+            <table id="tbl" border="1">
+                <tr>
+                    <td>Produto</td>
+                    <td>Valor</td>
+                    <td>Acao</td>
+                </tr>
+                <tbody id="myTable">
+                    <tr>
+                        <td>PT1</td>
+                        <td>1</td>
+                        <td>R$ 1,00</td>
+                    </tr>
+                    <tr>
+                        <td>PT2</td>
+                        <td>2</td>
+                        <td>R$ 2,00</td>
+                    </tr>
+                    <tr>
+                        <td>PT3</td>
+                        <td>3</td>
+                        <td>R$ 3,00</td>
+                    </tr>
+                    <tr>
+                        <td>PT4</td>
+                        <td>4</td>
+                        <td>R$ 4,00</td>
+                    </tr>
+
+                    <tr>
+                        <td>PT5</td>
+                        <td>5</td>
+                        <td>R$ 1,50</td>
+                    </tr>
+                </tbody>
+            </table>
+    </div>
+
+
+    <p id="bu">
+        <input type="button" value="Criar PDF" id="btnImprimir" onclick="CriaPDF()" />
+    </p>
+
+
+
+</body>
+<script src="/js/bootstrap.js"></script>
+<script src="/js/script.js"></script>
+<script src="/js/scrpit2.js"></script>
+<script src="/js/script3.js"></script>
+
+</html>
